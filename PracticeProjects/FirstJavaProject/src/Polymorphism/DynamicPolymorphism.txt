@@ -1,0 +1,10 @@
+DYNAMIC POLYMORPHISM
+
+Whenever a call to the overriden method is made, it is the subclass version that is invoked and not the superclass version.
+
+
+1. Helps to create flexible and extensible programs.
+2. Also known as dynamic binding.
+3. Implemented using method overloading.
+4. Also known as run time polymorphism.
+5. Call to an overriden method is resolved at run time.

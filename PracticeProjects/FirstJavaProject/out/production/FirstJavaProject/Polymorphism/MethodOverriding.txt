@@ -1,0 +1,43 @@
+Method Overriding
+
+1. Defining two or more methods with the same name and same signature.
+2. One version of a method in a superclass and the other version is in subclass.
+3. By default, whenever a call to overridden method is made, the subclass version of the method is invoked.
+
+** Notes:-
+
+       The method name, the return type, and the argument list of the overriding method in the subclass should match the method of the
+       superclass.
+
+       The access modifier of the method in the subclass cannot be more restrictive than the one in the superclass. This implies that if the
+       method being overridden is declared as public in the superclass, it cannot be declared as private or protected in the subclass.
+
+       Methods defined as private, static, or final cannot be overridden.
+
+
+Ques:- Can you override any type of method in Java?
+
+Ans:-  NO, You cannot override all the methods in Java. Only the methods that are declared as public and protected can be overridden.
+
+Ques:- Can you override a method declared as public in a superclass and declare it private in a subclass?
+
+Ans:-  NO, The access modifier of a method declared as public in a superclass cannot be private in a subclass as it will be more
+       restrictive when compared to the superclass version. Remember, the private access specifier only restricts access to a member
+       or a method within the class.
+
+Ques:- Is the getDetails method implementation in the subclass of the following code snippet correct?
+       class Student {
+          public getDetails() {}
+       }
+       class reasearchStudent extends Student {
+          private getDetails() {}
+       }
+
+Ans:-  NO, The access modifier of a method declared public in a superclass cannot be private in a subclass as it will be more restrictive
+       when compared to the superclass version. Remember, the private access specifier only restricts access to a member or a
+       method within the class.
+
+Ques:- Can the main method be overridden?
+
+Ans:-  NO, Any static method cannot be overridden because method overriding is decided during runtime but static methods or variables are
+       decided during compile time itself. Since the main method is static we can’t override the main method.

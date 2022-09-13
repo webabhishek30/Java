@@ -1,0 +1,98 @@
+*****   VERSION CONTROL SYSTEM  *****
+
+Ques:-  What is Version Control System?
+Ans:-   Version control is a system that records or keeps track of the changes to a file or set of files over time so you can recall or go
+        back to specific version later.
+
+*****   Advantages of Distribution version control system   *****
+        1.  Faster access
+        2.  Ability to work offline
+        3.  Does not rely on a single location for backups.
+
+*****   Examples of Distribution version control system     *****
+        -   Github
+        -   Mercurial
+
+
+*****   How git is better than Mercurial?   *****
+        -   Git is faster than Mercurial for network operations such as downloading or uploading the projects file to the file servers.
+        -   Git's  approach to branches are more powerful than Mercurial.
+        -   Git is more powerful for larger projects.
+        -   Git is one of the most widely used popular version control system in use today.
+        -   Git is open source and you can create a public or private file system which can be accessible by your project team.
+
+        How are Git and GitHub different?
+
+        Git is a distributed version control system and a tool to manage your project source code history. Git will help you keep track
+        of the different versions of your project, but it tracks those changes locally on your computer; only you can see your project
+        code and all the changes and revisions made to your project code.
+
+        GitHub, on the other hand, is a web-based, Git file hosting service that enables you to upload your project code, along with its
+        changes and revisions, so you can showcase/share your projects and files with others.
+
+*****   How can different commits in Git be uniquely identified?
+
+        Each commit is identified in Git by a unique ID, also known as SHA. Every time a commit is made in Git, that commit is assigned a
+        unique ID or SHA. Using this unique ID, one commit can be distinguished from other commits.
+
+*****   Importance of the Commit Message    *****
+        -   It is important to write good commit message when you are working in your team.
+        -   Commit message would help other members on your team understand what files you created or what changes you made to the file.
+        -   The commit message can also be used to remind you what changes you had made with a specific commit.
+
+
+
+
+*****   GIT COMMANDS    *****
+        -   Configure Git
+            -   git config --global user.name username
+            -   git config --global user.email user_email
+
+        -   Initializing a git repository
+            -   git init    -   This command helps us in creating an empty git repository, also this command create .git repository in
+                                the same directory
+
+        -   Add file
+            -   git add filename
+
+        -   Commit file
+            -   git commit -m "Message"
+
+        -   Putting up our project on Github
+            -   git remote add origin url   -   This command gathers all the committed files from your local repository.
+                                            -   And Uploads them to our repository we created on github account.
+                                            -   Not all files are included in the upload.
+                                            -   Only new files and files that contain changes get uploaded.
+
+        -   Push your project on github
+            -   git push -u origin master   -   Git push tell git we want to upload our files and development history from the repository
+                                                on our local computer to a repository hosted on github.
+                                            -   -u option will tell you we want to upload the master version of our commits to a repository
+                                                on github called origin
+                                            -   Origin is simply an alias for your github repositories address on github.
+                                            -   Github automatically linked your remote repository address to the alias origin when you installed
+                                                github.
+                                            -   We can change origin to whatever github repository address you would like.
+
+        -   State of your working directory
+            -   git status                  -   This command will display the state of the working directory and the staging area. In other words,
+                                                it lets you see the changes that have been staged and the changes that have not been added to the
+                                                staging area.
+
+        -   Show commit details
+            -   git log                     -   This command shows you the commit details. It lists out the commits made in the repository in
+                                                reverse-chronological order, that is, the most recent commits show up first. It shows commits with
+                                                the following details:
+                                                    -   The commit ID or SHA
+                                                    -   Author’s name (who made the commit)
+                                                    -   Date and time
+                                                    -   Commit message
+
+        -   Add new repository to your local repository
+            -   git remote add              -   Using this command, you can add a new remote repository to your local repository. To do so,
+                                                you should use the git remote add command on the terminal, in the directory your repository is
+                                                stored at. The git remote add command takes two arguments:
+                                                    -   A remote URL, for example, https://github.com/user/repo.git (the address of the repository
+                                                        on your GitHub account that you want to link your local repository to.)
+                                                    -   A remote name, for example, origin (it can be any name)
+

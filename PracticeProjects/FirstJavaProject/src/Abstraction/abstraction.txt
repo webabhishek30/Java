@@ -1,0 +1,36 @@
+Classes and objects: 'Classes and objects' make up the framework of object-oriented programming which revolves around the
+real-life entities.
+
+Class: A class is a blueprint from which objects are created. It represents a set of attributes and methods, which represent a group
+of entities, and is common to all the objects of one type.
+
+Object: An object represents a real-life entity, which belongs to a class with the same properties as that of the object.
+The object can perform all functionalities declared in its class, by invoking the methods declared there.
+
+
+Constructors: A constructor is used to initialize the state of an object.
+
+Default constructor: A constructor that doesn’t need to be declared and is without any parameter is known as a default constructor.
+A default constructor can assign user defined or default values to the instance variables of the object depending on the type.
+For example, 0, null, etc.
+
+Parameterised constructor: A constructor that takes in some parameter for the initialisation of instances variables while creating an
+object is known as a parameterized constructor. A parameterized constructor is used to assign different values to the instance variables
+when creating  distinct objects.
+
+
+The this, static, and final keywords:
+
+The this keyword: The this keyword can be used to refer to the current class instance variables. If there is ambiguity between the
+instance variables and parameters, the this keyword resolves the problem.
+
+The static keyword: Anything which is declared static belongs to the entire class, rather than only to the instance of the class, i.e.
+a static member is the common property of all the objects of the class.
+
+The final keyword: The final keyword is used to restrict the user from updating the value of instance variables. If any variable is
+declared as final, you cannot change the value of that variable. If any method is declared as final, you cannot override that particular
+method.
+
+Abstraction: Abstraction is a principle based on hiding the details of the implementations of classes, and access only certain
+features/functionalities given to the users/other parts of the program. This is done by writing your program using the framework of
+classes and objects.

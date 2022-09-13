@@ -1,0 +1,25 @@
+Method Overloading(Static Polymorphism)
+
+1.  Two or more functions/methods having same name and either same or different return type.
+    Eg:-
+        public float computFees()
+        public int computFees()
+
+2.  Two ways to overload a function:
+    a. Change the number of arguments
+    b. Change the datatype of arguments
+    Eg:-
+        public float computeFees(float fees)
+        public float computeFees(int fees)
+        public float computeFees(float fees, int percent)
+
+3. Type of Static polymorphism.
+
+Static Polymorphism
+
+-   Also known as compile time polymorphism as the compiler is aware which version of the overloaded function is to be invoked.
+
+Ques:-  Can you overload a constructor in Java?
+
+Ans:-   Yes! Java supports constructor overloading. In constructor loading, we create multiple constructors with the
+        same name but with different parameters types or with different no of parameters.

@@ -1,0 +1,17 @@
+*****   ANNOTATIONS    *****
+
+Ques:- What is @override annotations?
+Ans:-  When a method is marked with the @override annotations, the compiler searches for that particular method in the parent class. If
+       the method is not found in the parent class, then the compiler throws an error.
+
+Ques:- Advantages of @override annotations?
+Ans:-  -  Fewer chances of bugs because of an incorrect method name.
+       -  Better readability
+
+Ques:- What is @deprecated annotations?
+Ans:-  @Deprecated annotation is used to mark a piece of code that should not be used to write new code.
+       If your code includes the deprecated code, the compiler will show a warning.
+
+Ques:- Advantages of @override annotations?
+Ans:-  -  Warns the team/programmer against the deprecated elements
+       -  Helps in maintaining the hygiene of the code

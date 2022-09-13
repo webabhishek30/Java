@@ -1,0 +1,25 @@
+Abstraction
+encaplusation
+inheritance
+ploymorphism
+
+difference between Scanner and BufferReader
+
+What is the difference between scanner.hasNext() vs scanner.hasNextLine() ? 
+
+Can we specify relative path instead of full path?
+
+can u please explain again me the difference between bufferedreader and filereader?
+
+can we use stringbuffer instead of string?
+
+What does WriteString method return? How do we know if the content is written to the file?
+
+When a BufferedReader or Scanner is reading from the file through the Java program, will there be a lock on the file during that file ? 
+I mean, can I save the file outside of program while it is being read/written from the program.
+
+
+what is the difference between errors and exceptions?
+
+throws goes with method signature
+throw generating own exception

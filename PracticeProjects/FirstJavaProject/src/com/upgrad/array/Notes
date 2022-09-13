@@ -1,0 +1,101 @@
+Type of Array in Java
+    -   ArrayList
+    -   LinkedList
+
+
+Printing the ArrayList Class
+Explain the significance of line 1 in the code segment given below.
+
+for(Object o : students) {
+      Student s = (Student)o;                    //line 1
+      System.out.println(s.getDetails());
+}
+
+Since the ArrayList class can contain the elements of any data type, you can refer to its type as ‘Object’. Whenever you create the
+ArrayList of the Object data type, you need to typecast its elements to access them or use them to call methods. Now, all the elements
+of the ‘students’ ArrayList are of the type Object. You cannot access the getDetails( ) method of the Student class from ‘o’ since it is
+of the type Object. So, the type of the object o has to be typecast to Student to access the getDetails( ) method. That’s why line 1 is
+written, to typecast o into s, which is of the Student type. Then, you can access the method using s.getDetails( ).
+
+A Java ArrayList is very similar to an array, with the facility to add or remove elements dynamically during run-time.
+That’s why ArrayList is also referred to as a dynamic array. It is used to store a group of elements, where storing duplicates is allowed.
+
+In the ArrayList you learnt about so far, all the elements are of the data type Object, which basically needs to be typecast to be
+accessible.
+
+
+Type Safety
+A type-safe program is one that doesn’t (or can’t) encounter a run-time error.
+
+So, how can you make your program type-safe?
+
+    -   Compile time errors are always preferred over run-time errors because they are easier to identify and fix.
+        So, you can make your program type-safe by converting potential run-time errors into compile time errors.
+
+
+Making a Program Type-Safe
+When you add elements of different data types to an ArrayList, you may face run-time errors because of typecasting issues.
+
+How will you convert these potential run-time errors into compile-time errors and make the program type-safe?
+
+    -   You can make the program type-safe by changing the way you declare the ArrayList. You can declare it using the ArrayList format,
+        by which the compiler will ensure that objects of any other data type cannot be added to this special ArrayList.
+
+
+How to create ARRAYLIST of a specific object type?
+
+    -   ArrayList<Type> = new ArrayList<Type>();
+
+Type-safe ArrayList
+
+    -   Not allowed to add objects of any type, other than student type, into student Arraylist.
+    -   Can add objects of sub-classes of Student class into Student ArrayList.
+
+
+Following are some of the advantages of using Generics.
+
+    -   The ArrayList can only hold a specific data type and the elements of other data types are not allowed.
+    -   Typecasting is not required.
+    -   There is a conversion of potential run-time errors into compile-time errors.
+
+Format to Declare ArrayList Using Generics
+
+    The class ArrayList can be declared using generics in the method shown below:
+    -   ArrayList<datatype> listName = new ArrayList<datatype>();
+
+Here, the data type to be mentioned is always non-primitive (reference). For example, Student, String, etc., which are declared
+as classes. Primitive data types such as int, char, and double cannot be used here. If you want to store primitive data types in
+ArrayList classes, you’ll need to use their Object cousins, such as Integer, Double, Float, and Boolean.
+
+So, if you need to create the Generics ArrayList with elements of the following data types, you can use the following formats:
+
+    1. ArrayList of int-type values —
+       ArrayList<Integer> list = new ArrayList<Integer>();
+
+
+    2. ArrayList of double-type values —
+       ArrayList<Double> list = new ArrayList<Double>();
+
+    3. ArrayList of float-type values —
+       ArrayList<Float> list = new ArrayList<Float>();
+
+
+
+*****   ANNOTATIONS    *****
+
+Ques:- What is @override annotations?
+Ans:-  When a method is marked with the @override annotations, the compiler searches for that particular method in the parent class. If
+       the method is not found in the parent class, then the compiler throws an error.
+
+Ques:- Advantages of @override annotations?
+Ans:-  -  Fewer chances of bugs because of an incorrect method name.
+       -  Better readability
+
+Ques:- What is @deprecated annotations?
+Ans:-  @Deprecated annotation is used to mark a piece of code that should not be used to write new code.
+       If your code includes the deprecated code, the compiler will show a warning.
+
+Ques:- Advantages of @override annotations?
+Ans:-  -  Warns the team/programmer against the deprecated elements
+       -  Helps in maintaining the hygiene of the code
+

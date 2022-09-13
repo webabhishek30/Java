@@ -1,0 +1,17 @@
+INHERITANCE IN JAVA
+
+1. Use the extends keyword for inheriting the features of another class.
+2. Class being inherited is known as Super/Parent/Base Class.
+3. Class inheriting the features is known as Sub/Child class.
+
+In multilevel inheritance, a class is derived from one class, and the derived class later becomes the base/parent class for another class.
+For example, class B is derived from class A, which makes class A the parent class of class B, which is the sub/derived class. Now,
+if you derive a class C from class B, this type of inheritance is known as multilevel inheritance. In Figure(a), class B is derived from
+class A and class C is derived from class B, which satisfies the definition of multilevel Inheritance. Therefore, it is a case of
+multilevel inheritance.
+
+
+In multiple inheritance, two or more classes act as a parent class for one child/subclass. For example, if class C is derived from both
+class A and class B, it is a case of multiple inheritance. But, Java doesn’t support multiple inheritance because, consider a scenario
+where A, B and C are three classes. The C class inherits A and B classes. If A and B classes have the same method and you call it from
+child class object, there will be ambiguity to call the method of A or B class.

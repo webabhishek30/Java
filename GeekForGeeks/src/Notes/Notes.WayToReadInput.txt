@@ -1,0 +1,45 @@
+Ques:-  Difference Between Scanner and BufferedReader Class in Java?
+
+        *****   SCANNER    *****
+
+Ans:-   Scanner is a class in java.util package used for obtaining the input of the primitive types like int, double, etc. and
+        strings. It is the easiest way to read input in a Java program, though not very efficient if you want an input method
+        for scenarios where time is a constraint like in competitive programming.
+
+        -   To create an object of Scanner class, we usually pass the predefined object System.in, which represents the standard
+            input stream. We may pass an object of class File if we want to read input from a file.
+
+        -   To read numerical values of a certain data type XYZ, the function to use is nextXYZ(). For example, to read a value
+            of type short, we can use nextShort()
+
+        -   To read strings, we use nextLine().
+
+        -   To read a single character, we use next().charAt(0). next() function returns the next token/word in the input as a
+            string and charAt(0) function returns the first character in that string.
+
+        -   The Scanner class reads an entire line and divides the line into tokens. Tokens are small elements that have some
+            meaning to the Java compiler. For example, Suppose there is an input string: How are you
+
+            In this case, the scanner object will read the entire line and divides the string into tokens: “How”, “are” and
+            “you”. The object then iterates over each token and reads each token using its different methods.
+
+
+            Sometimes, we have to check if the next value we read is of a certain type or if the input has ended (EOF marker
+            encountered).
+
+            Then, we check if the scanner’s input is of the type we want with the help of hasNextXYZ() functions where XYZ is
+            the type we are interested in. The function returns true if the scanner has a token of that type, otherwise false.
+            For example, in the below code, we have used hasNextInt(). To check for a string, we use hasNextLine().
+            Similarly, to check for a single character, we use hasNext().charAt(0).
+
+
+            *****   BUFFERED READER    *****
+
+            Reads text from a character-input stream, buffering characters so as to provide for the efficient reading of
+            characters, arrays, and lines. The buffer size may be specified, or the default size may be used. The default is
+            large enough for most purposes. In general, each read request made by a Reader causes a corresponding read request
+            to be made of the underlying character or byte stream. It is therefore advisable to wrap a BufferedReader around
+            any Reader whose read() operations may be costly, such as FileReaders and InputStreamReaders. Programs that use
+            DataInputStreams for textual input can be localized by replacing each DataInputStream with an appropriate
+            BufferedReader.
+

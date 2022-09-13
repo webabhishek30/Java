@@ -1,0 +1,11 @@
+Why code reusability?
+
+-  The rising cost of building large software systems can be attributed to the fact that most of the development takes place from scratch.
+   But by using the object-oriented programming methodology, large systems are built via modules that have been created earlier rather
+   than by rewriting the code for the entire software from scratch.
+
+-  The two main benefits of code reusability are:-
+   1. It saves on development effort and, in turn, reduces the overall development cost of the software.
+   2. It makes system maintenance easier. This is because only the new module will have to be tested for errors, not the entire program.
+
+Object-oriented programming provides these benefits through Inheritance & Polymorphism.
